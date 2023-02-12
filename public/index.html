@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+  <title>Hex Sweeper</title>
+  <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+    div.hexRow {
+      display: flex;
+      font-size: 0;
+    }
+    div.hexSpace {
+      display: inline-block;
+      font-size: initial;
+    }
+    div.hexCell {
+      display: inline-block;
+      clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
+      font-size: initial;
+    }
+    div.hexCell > p {
+      text-align: center;
+      -webkit-user-select: none; /* Safari */
+      -moz-user-select: none; /* Firefox */
+      -ms-user-select: none; /* IE10+/Edge */
+      user-select: none; /* Standard */
+      cursor: default;
+    }
+  </style>
+</head>
+<body>
+    <div id="elmish-app" class="elmish-app"></div>
+    <script src="bundle.js"></script>
+</body>
+</html>
